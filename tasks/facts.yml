@@ -1,0 +1,7 @@
+---
+- name: Check slack install status
+  command: snap list slack
+  register: slack_status
+  ignore_errors: true
+  changed_when: false
+

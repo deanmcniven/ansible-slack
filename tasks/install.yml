@@ -1,0 +1,5 @@
+---
+- name: Install Slack Snap
+  command: snap install slack --classic
+  when: slack_status is failed
+
